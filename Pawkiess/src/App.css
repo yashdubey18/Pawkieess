@@ -1,0 +1,193 @@
+/* src/App.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Home Page Styles */
+.home-page {
+  padding: 20px;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.home-header h1 {
+  margin: 0;
+  color: #ff9800; /* Example color */
+}
+
+.auth-buttons a {
+  margin-left: 15px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff; /* Example button color */
+  border-radius: 5px;
+}
+
+.auth-buttons a:hover {
+  background-color: #0056b3;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.hero-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.gallery-section {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.services-section {
+  padding: 30px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.services-section h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.services-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.services-section li {
+  margin-bottom: 8px;
+}
+
+.home-page footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Login and Signup Page Styles */
+.login-page, .signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-page header, .signup-page header {
+  margin-bottom: 30px;
+}
+
+.login-page h1, .signup-page h1 {
+  color: #ff9800; /* Example color */
+}
+
+.login-page header a, .signup-page header a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.login-page header a:hover, .signup-page header a:hover {
+  text-decoration: underline;
+}
+
+.login-form, .signup-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-form div, .signup-form div {
+  margin-bottom: 15px;
+}
+
+.login-form label, .signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form button, .signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Example button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.login-form button:hover, .signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form p, .signup-form p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-form p a, .signup-form p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-form p a:hover, .signup-form p a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,330 @@
+/* Sitter Profile Container */
+.sitter-profile-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Back Button */
+.back-button {
+    background: transparent;
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: #ff6b6b;
+    color: white;
+}
+
+/* Profile Header */
+.profile-header {
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+}
+
+.profile-header-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.profile-header-info {
+    flex: 1;
+}
+
+.profile-header-info h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.8rem;
+}
+
+.profile-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.location-tag,
+.rating-display {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.verified-badge {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.profile-price-display {
+    text-align: right;
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ff6b6b;
+    line-height: 1;
+}
+
+.price-period {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+
+/* Profile Content Grid */
+.profile-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-section {
+    padding: 2rem;
+}
+
+.profile-section.full-width {
+    grid-column: 1 / -1;
+}
+
+.profile-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #ff6b6b;
+    padding-bottom: 0.5rem;
+}
+
+/* Bio Section */
+.bio-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Experience Section */
+.experience-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.experience-badge {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.experience-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.service-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.service-icon {
+    font-size: 2rem;
+}
+
+.service-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+}
+
+/* Location Details */
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.location-item {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 0.8rem;
+    background: rgba(255, 107, 107, 0.05);
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.location-item strong {
+    color: #1a1a2e;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+    padding: 1rem;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+/* Reviews Section */
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.no-data {
+    text-align: center;
+    color: #999;
+    font-size: 1.1rem;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 2rem 2.5rem;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 142, 83, 0.1));
+    border: 2px solid rgba(255, 107, 107, 0.3);
+}
+
+.booking-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.booking-info h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.booking-info p {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.booking-button {
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .profile-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-price-display {
+        text-align: center;
+    }
+
+    .booking-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .booking-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sitter-profile-container {
+        padding: 1rem;
+    }
+
+    .profile-header-info h1 {
+        font-size: 2rem;
+    }
+
+    .profile-meta {
+        justify-content: center;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-amount {
+        font-size: 2.5rem;
+    }
+}
